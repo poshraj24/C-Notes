@@ -1,0 +1,30 @@
+Class
+A class is a user defined data type which holds both data and function. The data inside the class are called member data and functions are called member functions. The binding of data and functions together into a single class type variable is called encapsulation which is one of the benefit of OOP. 
+GENERAL SYNTAX:
+			class class_name{
+				access-specifier1:
+					member data 1;
+					member data 2;
+				''	''	''	
+				access-specifier2:
+					member data 3;
+					member function();
+					...............
+				access specifier3:
+					member function2();
+					member function3();
+					.................
+};	//end of class 
+
+In above declaration the class is keyword(specifier), class_name is any identifier name ,the no of member data and member functions are binded inside class depends on the requirement. The access specifier defines how those member data and member functions can be accessed by its object from inside or outside class. There are three types of access specifier:
+ 
+1. Private
+2. Protected
+3. Public
+
+An object is an instance of a class i.e a variable of a class. The general declaration of object is:
+	class_name Obj_name;
+
+
+
+
