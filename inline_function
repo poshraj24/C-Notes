@@ -1,0 +1,34 @@
+Inline function
+
+It is possible to define a function that are not actually called but rather are expanded in line. 
+At the point of each call the advantage of inline function is that they can be executed much faster than normal functions.
+This is because inline function reduces calling and returning process time of normal function.
+
+The disadvantage of inline function is that if they are too large and too often the program grows larger and become messy. For this
+reason, only short functions are declared as inline function. 
+To declare an inline function the function definition starts with "inline" specifier/keyword.
+
+EXAMPLE:
+WAP to check if the given number is even or not using inline function.
+
+#include<iostream>
+using namespace std;
+inline int even(int);
+int main(){
+int a;
+cout<<"Enter number"<<endl;
+cin>>a;
+if(even(a)){
+cout<<x<<"is odd"<<endl;
+}
+else{
+cout<<x<<"is even"<<endl;
+return 0;
+}
+inline int even(int a){
+return(a%2);
+}
+
+
+   
+
