@@ -1,0 +1,37 @@
+Excess specifier
+We have three excess specifier in class which are also known as incapsulation modifiers They are called private,protected and public. 
+	The key feature of object oriented programming is data hiding, that means the isolation of the data from direct access by the program.
+The access specifiers of class are responsible to do so. 
+	Private data or functions can only be accessed from within the class. 
+	Protected data or functions are accessible from the outside the class in limited amount,i.e in inheritance. 
+	Public data or functions are accessible from outside the class.
+The binding of data and functions together into a single class type variable is called data encapsulation and by means of encapsulation modifiers data hiding is possible through class based on the requirements. 
+
+WAP to input length and breadth of rectangle and calculate the area and perimeter of that rectangle using concept of class. 
+#include<iostream>
+using namespace std;
+class rectangle{
+private:
+int len,br;
+public:
+int getdata(){
+cout<<"Enter length and breadth"<<endl;
+cin>>len>>br;
+return 0;
+}
+int calculate(){
+int a,p;
+a=len*br;
+p=2*(len+br);
+cout<<"Area is\t"<<a<<"\t Perimeter is"<<p<<endl;
+return 0;
+}
+}; //end of class
+int main(){
+rectangle r;	//r is an object of rectangle class
+r.getdata();
+r.calculate();
+return 0;
+}
+
+
