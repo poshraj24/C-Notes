@@ -1,0 +1,21 @@
+Class:
+WAP to input student details i.e name, roll, section and display the result using concept of class.
+
+Defining members outside class
+The member functions or member data can be declared outside class with the same scope level i.e in the member definition inside a class. To do so, we should use a membership identity level for each member functions or member data. This level tells the compiler that the members belong to the given class. We can do so with the help of scope resolution operator.
+
+SYNTAX:
+return_type	class_name::function name(){
+..........
+.......
+}
+Eg:
+void student::getdetails(){
+.........
+.........
+}
+The membership level class_name:: tells the compiler that the function belongs to that class, i.e the scope of the function is restricted to that class specified in the header line.
+The member functions have some special characteristics in outside class definitions.
+1. Several different classes can use the same function name 
+2. Member function can access the private data of the class. A non member function cannot do so.
+3. A member function can call another member function directly without using dot(.) operator. 
